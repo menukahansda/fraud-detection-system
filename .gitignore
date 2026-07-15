@@ -1,0 +1,17 @@
+# personal notes
+notes.md  
+
+# Environment
+venv/
+__pycache__/
+*.pyc
+
+# Data (large files)
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts 
+# models/*.pkl
