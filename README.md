@@ -49,3 +49,17 @@ fraud-detection-system/
 └── tests/
     └── test_preprocessing.py     # basic sanity checks on preprocessing functions
 ```
+
+
+
+## Download Data Set From CLI:
+
+Get a api token from kaggle and replace it with <token_key> :
+
+``` bash
+# save it to a file so that client can read automatically
+mkdir -p ~/.kaggle && echo <token_key> > ~/.kaggle/access_token && chmod 600 ~/.kaggle/access_token
+
+# download the dataset
+kaggle datasets download -d mlg-ulb/creditcardfraud -p data/raw --unzip
+```
