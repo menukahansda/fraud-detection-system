@@ -1,7 +1,14 @@
 # fraud-detection-system
 Flags fraudulent credit card transactions in real time using supervised ML on imbalanced transaction data
 
-# Project Structure — fraud-detection-system
+
+## Table of Contents
+- [Project Structure](#project-structure--fraud-detection-system)
+- [Setup](#setup)
+- [Download Data](#download-data-set-from-cli)
+
+
+## Project Structure — fraud-detection-system
 
 ```
 fraud-detection-system/
@@ -49,6 +56,16 @@ fraud-detection-system/
 └── tests/
     └── test_preprocessing.py     # basic sanity checks on preprocessing functions
 ```
+
+
+## Setup
+
+1. Get a Kaggle API token and download the dataset (see CLI instructions below)
+2. Install dependencies: `pip install -r requirements.txt`
+3. (Optional) Explore the data: `notebooks/01_eda.ipynb`
+4. Run `notebooks/02_preprocessing.ipynb` to generate:
+   - Processed train/test data in `data/processed/`
+   - Fitted scaler in `models/amount_scaler.pkl`
 
 
 
