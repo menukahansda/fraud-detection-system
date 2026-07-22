@@ -9,11 +9,14 @@ __pycache__/
 # Data (large files)
 data/raw/*.csv
 !data/raw/.gitkeep
+data/processed/*.csv
+!data/processed/.gitkeep
 
 # Jupyter
 .ipynb_checkpoints/
 
 # Model artifacts 
-# models/*.pkl
+models/*.pkl
+!models/.gitkeep
 
 .env
